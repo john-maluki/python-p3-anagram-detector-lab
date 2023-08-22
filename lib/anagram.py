@@ -9,11 +9,10 @@ class Anagram:
         for word in words:
             is_anagram  = True
             for c in word:
-                if c in self.word:
-                    continue
-                else:
+                if not (c in self.word):
                     is_anagram = False
                     break
+                    
 
             if is_anagram:
                 anagrams.append(word)
